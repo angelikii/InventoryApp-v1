@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/product_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_add"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="fitCenter"
+            android:background="@color/colorAccent"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Product name"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:layout_toRightOf="@id/image_add"
+            android:layout_alignParentTop="true"
+            />
+
+        <EditText
+            android:id="@+id/edit_price"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_name"
+            android:layout_toRightOf="@id/image_add"
+            android:hint="price (no dec.)"
+            android:inputType="number"
+            android:textSize="12sp"
+            />
+
+        <EditText
+            android:id="@+id/edit_supplier"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_price"
+            android:layout_toRightOf="@id/image_add"
+            android:hint="Supplier mail"
+            android:textSize="12sp"
+            />
+
+
+
+        <EditText
+            android:id="@+id/edit_quantity"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_supplier"
+            android:layout_toRightOf="@id/image_add"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:textSize="12sp"
+            />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/product_edit"
+        android:text="SAVE PRODUCT"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
